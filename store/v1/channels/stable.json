@@ -300,82 +300,15 @@
       },
       "schemaVersion": 1,
       "source": {
-        "companionPackages": [
-          "@agentclientprotocol/claude-agent-acp"
-        ],
-        "installArguments": [
-          "--allow-scripts=@anthropic-ai/claude-code"
-        ],
-        "latestVersionWindow": [
-          {
-            "artifact": "@anthropic-ai/claude-code",
-            "integrity": "sha512-sOwHBM69H8Zka3/D3rc2VNNemPYNlgfYTdhsoqPoXZdK5KcKQlzoue4asJ2RVc+tGb/Pz1qxjVV9nVJQ87W7Ng==",
-            "version": "2.1.272"
-          },
-          {
-            "artifact": "@anthropic-ai/claude-code",
-            "integrity": "sha512-mnhR0yp8ycoJxTGrLTl+YWMAgSNJISDd2B0DhtavmtKuHDcCOi+/qDfm4zTLjUA61GAT8+IMBfS2zI4OFo8OXQ==",
-            "version": "2.1.271"
-          },
-          {
-            "artifact": "@anthropic-ai/claude-code",
-            "integrity": "sha512-0zMkfIWQu7/SG56VP8r780HZWvrNShzK28AbAnhKRK0ns+ToGXPT0W8UqyZmZCUKAkJDd5//TrwSOhk1+hysiw==",
-            "version": "2.1.270"
-          },
-          {
-            "artifact": "@agentclientprotocol/claude-agent-acp",
-            "integrity": "sha512-m8mhsAOc5+m/QZNsKCrfyIRv4KQrCLqSYHZP/aUvL3X0Xn0f9n4wKKNpOpOv0Kblh/2Mkpd4SW0KypN1dZkJfg==",
-            "version": "0.77.0"
-          },
-          {
-            "artifact": "@agentclientprotocol/claude-agent-acp",
-            "integrity": "sha512-8Xh1ryud5b1fOGLfF+S7dW2hhIZ/h4WopKtD//JRcQWxu7dutZvzN/MhRSDjqRcxqf3UIZRx1K0OhnlY/hMaOg==",
-            "version": "0.76.0"
-          },
-          {
-            "artifact": "@agentclientprotocol/claude-agent-acp",
-            "integrity": "sha512-Un6I4BRkhpCFS3I7kr5C/lkAm8Nc3VuGZU2YQ3xIpJAIxV94iWO0Q2CH2QABxMERpONRu4Le6XC9V+5PImQZ2A==",
-            "version": "0.75.1"
-          }
-        ],
+        "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
+        "latestVersion": "2.1.272",
         "package": "@anthropic-ai/claude-code",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
       }
     },
     "kite.codebuddy.code": {
       "actions": {
-        "install": [
-          {
-            "cleanInstallRoot": true,
-            "managedCommands": [
-              "codebuddy",
-              "cbc",
-              "codebuddy-code",
-              "cbc-prewarm"
-            ],
-            "steps": [
-              {
-                "args": [
-                  "--no-audit",
-                  "--no-fund"
-                ],
-                "id": "install-codebuddy-package",
-                "packages": [
-                  "@tencent-ai/codebuddy-code@latest"
-                ],
-                "type": "npm"
-              }
-            ],
-            "timeoutMs": 900000,
-            "type": "managed",
-            "verify": [
-              {
-                "cmd": "command -v codebuddy >/dev/null 2>&1 && codebuddy --version",
-                "id": "codebuddy-command"
-              }
-            ]
-          }
-        ],
         "open": {
           "recipe": {
             "base": {
@@ -553,23 +486,11 @@
       },
       "schemaVersion": 1,
       "source": {
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-Y9xoUX4nsEsG5oz/AbRNH3ZmghmxCuB6dFAZC6xStLOnoxntPco2g4TtYuBi5c/POYQVLYs/ZbpsMx6zc99vFg==",
-            "version": "2.151.0"
-          },
-          {
-            "integrity": "sha512-aJg+3pHr6671C7p2jyPyIc12gNwkEEXIBAeW1UQrNQPo7lV+MQBgjV1XpLXOH6CowsKFQ3QbskUjqLhx+OF+hg==",
-            "version": "2.150.0"
-          },
-          {
-            "integrity": "sha512-aqDxCaJ0X0OuwhjvhRsorvPLpbE2Lmkfp5a1SyYbvP7htlnxf4/sZVxLY7t6lWTBYyKPCVSMHz9v86uWKfvvIA==",
-            "version": "2.149.0"
-          }
-        ],
+        "command": "npm install -g @tencent-ai/codebuddy-code@latest",
+        "latestVersion": "2.151.0",
         "package": "@tencent-ai/codebuddy-code",
-        "repository": "https://www.codebuddy.ai/docs/cli/quickstart",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g @tencent-ai/codebuddy-code"
       }
     },
     "kite.codex.cli": {
@@ -771,23 +692,12 @@
       },
       "schemaVersion": 1,
       "source": {
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-FV/x1OHXYv/ifjf3mXj9ThTTAWcUZN6cGIRQRhRxkKNOPuImu1WW0c8ev1vUkE9XGH90dEnYG1tBjIkxRikg0w==",
-            "version": "0.154.0"
-          },
-          {
-            "integrity": "sha512-wbHDmit7S/YvBGVX1DQmk13xtWblZ2cApeJ/pB7xDZ10Cna+DZc5ij7f0F4OxdsXN4FW1oLT48OpogUI1+8Y2w==",
-            "version": "0.153.4"
-          },
-          {
-            "integrity": "sha512-SwQns+YIXvaXV4a6RUd9twgTPJkkfZpuTNEkTtIkwBnfw6fpT61+d6gU1WHZxK6vWFNqJCBoJEP69FIAsoPduA==",
-            "version": "0.153.3"
-          }
-        ],
+        "command": "npm install -g @openai/codex@latest",
+        "latestVersion": "0.154.0",
         "package": "@openai/codex",
         "repository": "https://github.com/openai/codex",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g @openai/codex"
       }
     },
     "kite.codex.relay": {
@@ -1351,70 +1261,6 @@
     },
     "kite.deepseek.harness": {
       "actions": {
-        "install": [
-          {
-            "cleanInstallRoot": true,
-            "managedCommands": [
-              "dsh",
-              "dsh-acp",
-              "kite-dsh-acp"
-            ],
-            "steps": [
-              {
-                "args": [
-                  "--no-audit",
-                  "--no-fund",
-                  "--allow-scripts=@deepseek-ai/dsh-subprocess-local,koffi,node-pty,@google/genai,protobufjs"
-                ],
-                "id": "install-deepseek-harness-pair",
-                "packages": [
-                  "@deepseek-ai/dsh",
-                  "@openma/deepseek-harness-acp"
-                ],
-                "type": "npm"
-              },
-              {
-                "cmd": "set -eu\npersistence_js=\"$install_root/npm-global/lib/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-session-persistence-jsonl/lib/index.js\"\ntest -f \"$persistence_js\"\nif grep -Fq 'await link(tmp, finalPath);' \"$persistence_js\"; then\n  sed -i 's/import { link, mkdir, mkdtemp, open, readFile, readdir, realpath, rm, stat, truncate }/import { mkdir, mkdtemp, open, readFile, readdir, realpath, rename, rm, stat, truncate }/' \"$persistence_js\"\n  sed -i 's/await link(tmp, finalPath);/await rename(tmp, finalPath);/' \"$persistence_js\"\nfi\ngrep -Fq 'await rename(tmp, finalPath);' \"$persistence_js\"\ngrep -Fq 'realpath, rename, rm' \"$persistence_js\"",
-                "id": "patch-deepseek-harness-android-session-persistence",
-                "type": "shell"
-              },
-              {
-                "cmd": "set -eu\nacp_root=\"$install_root/npm-global/lib/node_modules/@openma/deepseek-harness-acp/dist\"\nfor acp_js in \"$acp_root/bridge.js\" \"$acp_root/plugin.js\" \"$acp_root/server.js\"; do\n  test -f \"$acp_js\"\n  if grep -Fq 'requireCredential(config.provider)' \"$acp_js\"; then\n    sed -i 's/requireCredential(config.provider)/requireCredential(defaultProvider())/g' \"$acp_js\"\n  fi\n  if grep -Fq 'requireCredential(record.provider ?? config.provider)' \"$acp_js\"; then\n    sed -i 's/requireCredential(record.provider ?? config.provider)/requireCredential(routeOf(record).provider)/g' \"$acp_js\"\n  fi\n  test \"$(grep -Fc 'requireCredential(defaultProvider())' \"$acp_js\")\" -eq 2\n  test \"$(grep -Fc 'requireCredential(routeOf(record).provider)' \"$acp_js\")\" -eq 2\n  ! grep -Fq 'requireCredential(config.provider)' \"$acp_js\"\n  ! grep -Fq 'requireCredential(record.provider ?? config.provider)' \"$acp_js\"\ndone",
-                "id": "patch-deepseek-harness-acp-selected-provider-auth",
-                "type": "shell"
-              },
-              {
-                "cmd": "set -eu\nmkdir -p \"$install_root/bin\" \"$install_root/user-home/.dsh\"\ncat > \"$install_root/bin/kite-dsh-acp\" <<EOF\n#!/usr/bin/env bash\nset -eu\nexport HOME=\"$install_root/user-home\"\nexport DSH_HOME=\"$install_root/user-home/.dsh\"\ndsh_bin=\"\\$(command -v dsh)\"\n[ -n \"\\$dsh_bin\" ] || { echo 'KITE_RESOURCE_FAILURE stage=prepare step=deepseek-harness-host reason=dsh-missing' >&2; exit 127; }\nexport DSH_PATH=\"\\$dsh_bin\"\nexec dsh-acp \"\\$@\"\nEOF\nchmod 755 \"$install_root/bin/kite-dsh-acp\"",
-                "id": "install-deepseek-harness-launcher",
-                "type": "shell"
-              }
-            ],
-            "timeoutMs": 900000,
-            "type": "managed",
-            "verify": [
-              {
-                "cmd": "command -v dsh >/dev/null 2>&1 && test \"$(dsh --version)\" = '0.1.1-rc.2'",
-                "id": "deepseek-harness-official-version"
-              },
-              {
-                "cmd": "command -v dsh-acp >/dev/null 2>&1 && test \"$(dsh-acp --version)\" = '@openma/deepseek-harness-acp 0.4.26'",
-                "id": "deepseek-harness-acp-version"
-              },
-              {
-                "cmd": "persistence_js=\"$install_root/npm-global/lib/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-session-persistence-jsonl/lib/index.js\" && grep -Fq 'await rename(tmp, finalPath);' \"$persistence_js\" && grep -Fq 'realpath, rename, rm' \"$persistence_js\"",
-                "id": "deepseek-harness-android-session-persistence"
-              },
-              {
-                "cmd": "acp_root=\"$install_root/npm-global/lib/node_modules/@openma/deepseek-harness-acp/dist\" && for acp_js in \"$acp_root/bridge.js\" \"$acp_root/plugin.js\" \"$acp_root/server.js\"; do test \"$(grep -Fc 'requireCredential(defaultProvider())' \"$acp_js\")\" -eq 2 && test \"$(grep -Fc 'requireCredential(routeOf(record).provider)' \"$acp_js\")\" -eq 2 && ! grep -Fq 'requireCredential(config.provider)' \"$acp_js\" && ! grep -Fq 'requireCredential(record.provider ?? config.provider)' \"$acp_js\" || exit 1; done",
-                "id": "deepseek-harness-acp-selected-provider-auth"
-              },
-              {
-                "cmd": "command -v kite-dsh-acp >/dev/null 2>&1 && test \"$(kite-dsh-acp --version)\" = '@openma/deepseek-harness-acp 0.4.26' && grep -q 'export DSH_PATH=' \"$install_root/bin/kite-dsh-acp\"",
-                "id": "deepseek-harness-launcher"
-              }
-            ]
-          }
-        ],
         "open": {
           "recipe": {
             "base": {
@@ -1607,40 +1453,11 @@
       },
       "schemaVersion": 1,
       "source": {
-        "companionPackages": [
-          "@openma/deepseek-harness-acp"
-        ],
-        "latestVersionWindow": [
-          {
-            "artifact": "@deepseek-ai/dsh",
-            "integrity": "sha512-UP1UIh6q3Gme/yXRn/QL2P8IsVlv8Shpg22TRJIZPsCRWLm4CBiA1MUvXmJAfsOEETBMLAl+xWPtFw6ICsN3wg==",
-            "version": "0.1.1-rc.2"
-          },
-          {
-            "artifact": "@deepseek-ai/dsh",
-            "integrity": "sha512-HVauMT0F7MWUctkxzBcu5PMFc8j0lm0kX+4IbcUsA7Oh+/xv7xhigEDP0SaSOM/kR48U/BldHbZru116DcZz0w==",
-            "version": "0.1.1-rc.1"
-          },
-          {
-            "artifact": "@openma/deepseek-harness-acp",
-            "integrity": "sha512-fke1vS505m5ydlVAxml+OIyIr6O+kwjm3JsOsQXMfXIP41m0fExEO74VJ0rnJ3K1R1tD7bgMaun/O7d1iZVu1A==",
-            "version": "0.4.26"
-          },
-          {
-            "artifact": "@openma/deepseek-harness-acp",
-            "integrity": "sha512-uqu5KJNbqpQ30N1L+Yd3deC4NvkcV6aHyQVOY7EpGEJ27aKjq9KNogeJqfC8wpKSE0YzaJ+0lPYsW5w40hdbwg==",
-            "version": "0.4.25"
-          },
-          {
-            "artifact": "@openma/deepseek-harness-acp",
-            "integrity": "sha512-IT27c1BVyO2cVOqGxXtdqBQUgwWHydR6Civ5E3fRYIJEbkGfFvWJFQs+gshC+rDbSeg9Uj5XTnEJ1uVMfCQz8A==",
-            "version": "0.4.24"
-          }
-        ],
+        "command": "npm install -g @deepseek-ai/dsh@latest && npm install -g @openma/deepseek-harness-acp@latest",
+        "latestVersion": "0.1.1-rc.2",
         "package": "@deepseek-ai/dsh",
-        "repository": "https://github.com/deepseek-ai/deepseek-harness",
-        "tag": "latest",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g @deepseek-ai/dsh && npm uninstall -g @openma/deepseek-harness-acp"
       }
     },
     "kite.devin.cli": {
@@ -2088,23 +1905,11 @@
       },
       "schemaVersion": 1,
       "source": {
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-RHcjpQEMwVkrWz75mEFsuMuM0JRVJgzLQzkGhEY6SE0KjwOWFA1wYKTUqpzDUHprcE2mgcTActyd4ihVdC2dpg==",
-            "version": "0.59.0"
-          },
-          {
-            "integrity": "sha512-++LtUYMcLE8dVxMcuwv6kIp8+h6z+std/7iVE+vSunkrwNDaWMFkWw/psv2RSySWjr2A1SsEEIGCK0xULWY2sA==",
-            "version": "0.58.0"
-          },
-          {
-            "integrity": "sha512-I0V03d3k0J0ZN2m9u54XhN3VcMG+VjyPzoy7E9QV8lhzd39C6UgaZGLZNsOgODOtDhK8YMijHJWJn+Qxop2umw==",
-            "version": "0.57.0"
-          }
-        ],
+        "command": "npm install -g @google/gemini-cli@latest",
+        "latestVersion": "0.59.0",
         "package": "@google/gemini-cli",
-        "repository": "https://github.com/google-gemini/gemini-cli",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g @google/gemini-cli"
       }
     },
     "kite.git": {
@@ -2229,42 +2034,6 @@
     },
     "kite.github.copilot": {
       "actions": {
-        "install": [
-          {
-            "cleanInstallRoot": true,
-            "managedCommands": [
-              "copilot",
-              "kite-copilot-acp"
-            ],
-            "steps": [
-              {
-                "args": [
-                  "--no-update-notifier",
-                  "--no-audit",
-                  "--no-fund"
-                ],
-                "id": "install-copilot-package",
-                "packages": [
-                  "@github/copilot@latest"
-                ],
-                "type": "npm"
-              },
-              {
-                "cmd": "cat > \"$install_root/bin/kite-copilot-acp\" <<'KITE_COPILOT_ACP'\n#!/usr/bin/env bash\nset -eu\nsecret_root='/workspace/.kf/secrets'\nread_optional() {\n  variable_name=\"$1\"\n  file_name=\"$2\"\n  file_path=\"$secret_root/$file_name\"\n  if [ -s \"$file_path\" ]; then\n    value=\"$(tr -d '\\r\\n' < \"$file_path\")\"\n    if [ -n \"$value\" ]; then export \"$variable_name=$value\"; fi\n  fi\n}\nread_optional COPILOT_PROVIDER_BASE_URL kite.copilot-provider-base-url\nread_optional COPILOT_PROVIDER_API_KEY kite.copilot-provider-api-key\nread_optional COPILOT_PROVIDER_TYPE kite.copilot-provider-type\nread_optional COPILOT_MODEL kite.copilot-model\nexec copilot --acp --stdio \"$@\"\nKITE_COPILOT_ACP\nchmod 755 \"$install_root/bin/kite-copilot-acp\"",
-                "id": "install-kite-copilot-launcher",
-                "type": "shell"
-              }
-            ],
-            "timeoutMs": 600000,
-            "type": "managed",
-            "verify": [
-              {
-                "cmd": "command -v copilot >/dev/null 2>&1 && command -v kite-copilot-acp >/dev/null 2>&1 && copilot --version",
-                "id": "copilot-commands"
-              }
-            ]
-          }
-        ],
         "open": {
           "recipe": {
             "base": {
@@ -2435,28 +2204,11 @@
       },
       "schemaVersion": 1,
       "source": {
-        "installArguments": [
-          "--no-update-notifier",
-          "--no-audit",
-          "--no-fund"
-        ],
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-M8uZI0V0dahYV1KZij3nGDxaXEGG7I7YUZzQPI7NEZkL/83Nl/tNTbPdxKtdWZbOmWoXsPKXty/eEYoj6RHDhA==",
-            "version": "1.0.83"
-          },
-          {
-            "integrity": "sha512-+mDIwBO3dCpL3k2rVLc4+1tFzqcVBTJNA/0co+okEpmCgcHjaz91Cqq7++pJKN5yJQuGC6bKangm7PSoheI1Xw==",
-            "version": "1.0.82"
-          },
-          {
-            "integrity": "sha512-Yif+wnRY1rT6FMmxr+SMZCq60mBTTPvbAHGd42Jty9wf1ZmeTsJYAcaGDXC9oyNm3RYRc3wkL0MSscNiEZADAA==",
-            "version": "1.0.81"
-          }
-        ],
+        "command": "npm install -g @github/copilot@latest",
+        "latestVersion": "1.0.83",
         "package": "@github/copilot",
-        "repository": "https://github.com/github/copilot-cli",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g @github/copilot"
       }
     },
     "kite.google.antigravity": {
@@ -3267,53 +3019,15 @@
       },
       "schemaVersion": 1,
       "source": {
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-jq60K07tJV+uZB/mTN7rgb99WU5z6PtUeLybywGhXpF5QybaehIWsWudZ9HR8hEEmc7pppB+GAA92RDqOOKnRg==",
-            "version": "0.43.1"
-          },
-          {
-            "integrity": "sha512-J8GnyiHKxjBA1kGkPGnxXWY2rbQ+O4WwBDfiOOqKAYOpptVk568l9qp5edlmz1iBXUpCZZUyw3pPnJhM5hZl2A==",
-            "version": "0.43.0"
-          },
-          {
-            "integrity": "sha512-WNm2/j/7lVqK27379wwWlFrYpg6qpe20kTE8cA0fZLcrbHT2msM54MPDKwA53F6uGrKqPqUBqgX8O7BqTfCc3Q==",
-            "version": "0.42.0"
-          }
-        ],
+        "command": "npm install -g @moonshot-ai/kimi-code@latest",
+        "latestVersion": "0.43.1",
         "package": "@moonshot-ai/kimi-code",
-        "repository": "https://github.com/MoonshotAI/kimi-code",
-        "tag": "latest",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g @moonshot-ai/kimi-code"
       }
     },
     "kite.mimo.code": {
       "actions": {
-        "install": [
-          {
-            "cleanInstallRoot": true,
-            "managedCommands": [
-              "mimo"
-            ],
-            "steps": [
-              {
-                "id": "install-mimo-package",
-                "packages": [
-                  "@mimo-ai/cli"
-                ],
-                "type": "npm"
-              }
-            ],
-            "timeoutMs": 900000,
-            "type": "managed",
-            "verify": [
-              {
-                "cmd": "command -v mimo >/dev/null 2>&1",
-                "id": "mimo-command"
-              }
-            ]
-          }
-        ],
         "open": {
           "recipe": {
             "base": {
@@ -3460,7 +3174,11 @@
         "managedCommands": [
           "mimo"
         ],
-        "mode": "managed_extension"
+        "mode": "managed_extension",
+        "versionProbe": {
+          "command": "mimo --version",
+          "pattern": "([0-9]+(?:\\.[0-9]+)+)"
+        }
       },
       "paths": {
         "binRoot": "/workspace/.kf/bin",
@@ -3481,23 +3199,11 @@
       },
       "schemaVersion": 1,
       "source": {
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-L9OQjAeIuWNu9MRKGmaj+aARzY2ShbfugO3ivo0rb9r8OmvolaI0W/iTTbtTwBbBHwqyHuffdplyhFlDouWVug==",
-            "version": "0.1.14"
-          },
-          {
-            "integrity": "sha512-tEChkbCPP6Cuk88yFEV5suQ/3U0864S2G+PKsVKfpGY1FJ2EsnOa/q1ie8J9XsTg7Z42JCCWRmN6apRujNgT2Q==",
-            "version": "0.1.13"
-          },
-          {
-            "integrity": "sha512-f1y5YsWXgDuKycTAMWI2RzgSwnipVawW8qxaVR3ksy0/3A5/rSDykrUF1zoIwnmZF481MqiJOFexV4ZasWGe9Q==",
-            "version": "0.1.12"
-          }
-        ],
+        "command": "npm install -g @mimo-ai/cli@latest",
+        "latestVersion": "0.1.14",
         "package": "@mimo-ai/cli",
-        "repository": "https://github.com/XiaomiMiMo/MiMo-Code",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g @mimo-ai/cli"
       }
     },
     "kite.nodejs": {
@@ -3645,36 +3351,6 @@
     },
     "kite.openclaw": {
       "actions": {
-        "install": [
-          {
-            "cleanInstallRoot": true,
-            "managedCommands": [
-              "openclaw"
-            ],
-            "steps": [
-              {
-                "id": "install-openclaw-package",
-                "packages": [
-                  "openclaw@latest"
-                ],
-                "type": "npm"
-              },
-              {
-                "cmd": "umask 077 && mkdir -p /workspace/.kf/secrets && token_file=/workspace/.kf/secrets/kite.openclaw-gateway-token && if [ ! -s \"$token_file\" ]; then { cat /proc/sys/kernel/random/uuid; cat /proc/sys/kernel/random/uuid; } | tr -d '\\n-' > \"$token_file\"; fi && chmod 600 \"$token_file\" && test -s \"$token_file\"",
-                "id": "prepare-openclaw-gateway-token",
-                "type": "shell"
-              }
-            ],
-            "timeoutMs": 900000,
-            "type": "managed",
-            "verify": [
-              {
-                "cmd": "command -v openclaw >/dev/null 2>&1",
-                "id": "openclaw-command"
-              }
-            ]
-          }
-        ],
         "open": {
           "recipe": {
             "base": {
@@ -3844,7 +3520,11 @@
         "managedCommands": [
           "openclaw"
         ],
-        "mode": "managed_extension"
+        "mode": "managed_extension",
+        "versionProbe": {
+          "command": "openclaw --version",
+          "pattern": "([0-9]+(?:\\.[0-9]+)+)"
+        }
       },
       "paths": {
         "binRoot": "/workspace/.kf/bin",
@@ -3865,23 +3545,11 @@
       },
       "schemaVersion": 1,
       "source": {
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-lTQpEEe1Xm3u2PCHaPEr+vP8paGk1vLdHuzdItsNToaLI6hAqRVvgJYg+GxukJhETJp4tPy/S1Gftl4KuB8n7A==",
-            "version": "2026.9.4"
-          },
-          {
-            "integrity": "sha512-CzDHMeHdnjlIZ76ZyBb1lvLO4H/yBIMYXupFGGBN87x0853y3hg5nLAnKfxSKqLzqhbUKqy9ebDRAWWV4t8aew==",
-            "version": "2026.9.3"
-          },
-          {
-            "integrity": "sha512-M6C7UsnX815nv26qBJFYGe6aGzv+ftZLRzV6S9oRXUtXg2Yn67eVntpssT94kgkquKVSeUxerUg0j1ONp4WYQg==",
-            "version": "2026.9.2"
-          }
-        ],
+        "command": "npm install -g openclaw@latest",
+        "latestVersion": "2026.9.4",
         "package": "openclaw",
-        "repository": "https://github.com/openclaw/openclaw",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g openclaw"
       }
     },
     "kite.opencode": {
@@ -4045,24 +3713,11 @@
       },
       "schemaVersion": 1,
       "source": {
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-J95feefeWwtIaw3irx76WjzWcgQXxmuHmDVphvs5ep9X30fBJ6T6bFhw50i9Kx50MG/xPn5w2pafXIfNtdry9w==",
-            "version": "1.18.31"
-          },
-          {
-            "integrity": "sha512-oLcOLQE4XzDKy6T5L5d1RdVJvXHXwVlD4hRF5V317JbUQorrl2EyDdGZk5kbgv675J9FXp8usg92MZbEWhh6gQ==",
-            "version": "1.18.30"
-          },
-          {
-            "integrity": "sha512-syIDVwlrYTgTOXzZe9SkInJWethbq6l3SNC762UeXyO0a9V0wGfd+U4yACvppwNBnhIsl0j2QPYYCyLpNaSomg==",
-            "version": "1.18.29"
-          }
-        ],
+        "command": "npm install -g opencode-ai@latest",
+        "latestVersion": "1.18.31",
         "package": "opencode-ai",
-        "repository": "https://github.com/anomalyco/opencode",
-        "tag": "latest",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g opencode-ai"
       }
     },
     "kite.pi.coding.agent": {
@@ -4220,23 +3875,11 @@
       },
       "schemaVersion": 1,
       "source": {
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-FGRN+OHbWaefBPGaTggAdLjrIHW+s2PzLyglz/5dfLzb9of7uuXMXYC0fJIeZTw+shS32o2cuQ9jF7YSDuL/oQ==",
-            "version": "0.85.1"
-          },
-          {
-            "integrity": "sha512-INxVkLAVfAMju5MojJpmyu/0bMP+r+ffZuS7UqVv32E2JwHBRbcHfELDfmFNvapEbgYfKN2r9OYO1p3TqDBR+g==",
-            "version": "0.85.0"
-          },
-          {
-            "integrity": "sha512-jmOlrqUmvhh/siNWFRXjYLJzhKFIHNsAQaysRwzQPQFnPAaV/vhqHsLH/MBsIISA1Rjj7WTUFR3nJrpXoLx39w==",
-            "version": "0.84.4"
-          }
-        ],
+        "command": "npm install -g @earendil-works/pi-coding-agent@latest",
+        "latestVersion": "0.85.1",
         "package": "@earendil-works/pi-coding-agent",
-        "repository": "https://github.com/earendil-works/pi",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g @earendil-works/pi-coding-agent"
       }
     },
     "kite.python": {
@@ -4370,36 +4013,6 @@
     },
     "kite.qoder.cli": {
       "actions": {
-        "install": [
-          {
-            "cleanInstallRoot": true,
-            "managedCommands": [
-              "qoder",
-              "qodercli"
-            ],
-            "steps": [
-              {
-                "args": [
-                  "--no-audit",
-                  "--no-fund"
-                ],
-                "id": "install-qoder-package",
-                "packages": [
-                  "@qoder-ai/qodercli@latest"
-                ],
-                "type": "npm"
-              }
-            ],
-            "timeoutMs": 600000,
-            "type": "managed",
-            "verify": [
-              {
-                "cmd": "command -v qoder >/dev/null 2>&1 && qoder --version",
-                "id": "qoder-command"
-              }
-            ]
-          }
-        ],
         "open": {
           "recipe": {
             "base": {
@@ -4588,52 +4201,15 @@
       },
       "schemaVersion": 1,
       "source": {
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-iH50/vGxsh+mVXdLDRHpxm3ClCgypm0/AOT5MBXVqcSgHVpSgQtLVHI6+5ZjJ7DKEqw6GPAGG0JFb6zQX4vyRA==",
-            "version": "1.1.53"
-          },
-          {
-            "integrity": "sha512-J4nkNkfiAeWblp6iDjJSVDpp8QCvniIlJXOy/CDgfKlFOAu6rY+wjbAX5tie5ITdDA/MMl6IAiQplD/9W8lv2g==",
-            "version": "1.1.52"
-          },
-          {
-            "integrity": "sha512-ap67t4yOjO79IgSPrQFgdNFUNSfVm4X1gLLXrKfeOyDblPixwPH4WA6YuKisq9Ilo+0/AEDcQSUiUK8ZldIt0g==",
-            "version": "1.1.51"
-          }
-        ],
+        "command": "npm install -g @qoder-ai/qodercli@latest",
+        "latestVersion": "1.1.53",
         "package": "@qoder-ai/qodercli",
-        "repository": "https://qoder.com",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g @qoder-ai/qodercli"
       }
     },
     "kite.qwen.code": {
       "actions": {
-        "install": [
-          {
-            "cleanInstallRoot": true,
-            "managedCommands": [
-              "qwen"
-            ],
-            "steps": [
-              {
-                "id": "install-qwen-package",
-                "packages": [
-                  "@qwen-code/qwen-code@latest"
-                ],
-                "type": "npm"
-              }
-            ],
-            "timeoutMs": 900000,
-            "type": "managed",
-            "verify": [
-              {
-                "cmd": "command -v qwen >/dev/null 2>&1",
-                "id": "qwen-command"
-              }
-            ]
-          }
-        ],
         "open": {
           "recipe": {
             "base": {
@@ -4774,7 +4350,11 @@
         "managedCommands": [
           "qwen"
         ],
-        "mode": "managed_extension"
+        "mode": "managed_extension",
+        "versionProbe": {
+          "command": "qwen --version",
+          "pattern": "([0-9]+(?:\\.[0-9]+)+)"
+        }
       },
       "paths": {
         "binRoot": "/workspace/.kf/bin",
@@ -4795,23 +4375,11 @@
       },
       "schemaVersion": 1,
       "source": {
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-qrM7Lwp9S6LfIx8Mh9sAr4aBPyUa9W0k72uOQJPsJ6Z8ClAzoEQzkdLD1TrchioJicgSckM1PLyendibyXHElA==",
-            "version": "0.23.4"
-          },
-          {
-            "integrity": "sha512-QaBNg5y/nfKJCMdVYjZmEx9n0StGTvg3NIYRExHIy9OWgBQ4wE7MQc7YrAMvy13pUmqJhYlpwOtvNsGDAgvYdA==",
-            "version": "0.23.3"
-          },
-          {
-            "integrity": "sha512-OthkaYnzRauVopk9yhgbQUfbsQo/B45fB76yHo863gRiv2cp8NmDOs1+79KxPb0zoi/G3fC6OvUHVgqdCCcFJQ==",
-            "version": "0.23.2"
-          }
-        ],
+        "command": "npm install -g @qwen-code/qwen-code@latest",
+        "latestVersion": "0.23.4",
         "package": "@qwen-code/qwen-code",
-        "repository": "https://github.com/QwenLM/qwen-code",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g @qwen-code/qwen-code"
       }
     },
     "kite.reasonix": {
@@ -4969,23 +4537,11 @@
       },
       "schemaVersion": 1,
       "source": {
-        "latestVersionWindow": [
-          {
-            "integrity": "sha512-wer7Y2ymwFYNGZJ6m2Nd8ta3qn5WTFHI5UlHr952LzvEZhBqOhzgVjMns+y4su45KlL4mD/XJtEDC47Uagjrlw==",
-            "version": "1.38.8"
-          },
-          {
-            "integrity": "sha512-pkN5aouRqOlrbJFFntEeE9/8DgXjzeyeKOVTffRlJGj+U32K7TB9ULkmtXWFUKjAIE814vsVJmQ6ZPuxHPzOAA==",
-            "version": "1.38.7"
-          },
-          {
-            "integrity": "sha512-KxcQsVFiiPFIAOyckpe3XtHrpTnJYun0wkO4I2f7uTxyk4lG0bf9nOwVzv2mMDmivd2yWEVxhO3bNwigULKL4A==",
-            "version": "1.38.6"
-          }
-        ],
+        "command": "npm install -g reasonix@latest",
+        "latestVersion": "1.38.8",
         "package": "reasonix",
-        "repository": "https://github.com/esengine/deepseek-reasonix",
-        "type": "npm"
+        "type": "official_command",
+        "uninstallCommand": "npm uninstall -g reasonix"
       }
     },
     "kite.shizuku": {
@@ -5996,6 +5552,6 @@
       }
     }
   },
-  "revision": 19,
+  "revision": 20,
   "schemaVersion": 1
 }
