@@ -301,7 +301,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
-        "latestVersion": "2.1.272",
+        "latestVersion": "2.1.274",
         "package": "@anthropic-ai/claude-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
@@ -1454,7 +1454,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @deepseek-ai/dsh@latest && npm install -g @openma/deepseek-harness-acp@latest",
-        "latestVersion": "0.1.1-rc.2",
+        "latestVersion": "0.1.5-rc.1",
         "package": "@deepseek-ai/dsh",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @deepseek-ai/dsh && npm uninstall -g @openma/deepseek-harness-acp"
@@ -1906,7 +1906,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @google/gemini-cli@latest",
-        "latestVersion": "0.59.0",
+        "latestVersion": "0.60.0",
         "package": "@google/gemini-cli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @google/gemini-cli"
@@ -2205,7 +2205,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @github/copilot@latest",
-        "latestVersion": "1.0.83",
+        "latestVersion": "1.0.85",
         "package": "@github/copilot",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @github/copilot"
@@ -3020,7 +3020,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @moonshot-ai/kimi-code@latest",
-        "latestVersion": "0.43.1",
+        "latestVersion": "2.0.0",
         "package": "@moonshot-ai/kimi-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @moonshot-ai/kimi-code"
@@ -4202,7 +4202,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qoder-ai/qodercli@latest",
-        "latestVersion": "1.1.53",
+        "latestVersion": "1.1.54",
         "package": "@qoder-ai/qodercli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qoder-ai/qodercli"
@@ -4376,7 +4376,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qwen-code/qwen-code@latest",
-        "latestVersion": "0.23.4",
+        "latestVersion": "0.24.0",
         "package": "@qwen-code/qwen-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qwen-code/qwen-code"
@@ -4538,7 +4538,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "1.38.8",
+        "latestVersion": "1.38.9",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5526,6 +5526,12 @@
         "latestUrl": "https://zcode.z.ai/en",
         "latestVersionWindow": [
           {
+            "artifact": "ZCode-3.12.3-linux-arm64.deb",
+            "sha256": "b6fcb0ddce028c8c5c6fe821d4c5033196da0841e5c0e64b4b54ce281180d652",
+            "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.12.3/linux-arm64/ZCode-3.12.3-linux-arm64.deb",
+            "version": "3.12.3"
+          },
+          {
             "artifact": "ZCode-3.11.2-linux-arm64.deb",
             "sha256": "de31487b97aade1365bdbf1c3a1624336cd163db8996416a4f8946f491eeedb0",
             "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.11.2/linux-arm64/ZCode-3.11.2-linux-arm64.deb",
@@ -5536,12 +5542,6 @@
             "sha256": "fcd57d2ee41e764d7fe171612db52e8fc7d23135328de484a5092c25f9c17f32",
             "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.10.2/linux-arm64/ZCode-3.10.2-linux-arm64.deb",
             "version": "3.10.2"
-          },
-          {
-            "artifact": "ZCode-3.10.1-linux-arm64.deb",
-            "sha256": "22b79babe3b00fb6fbfcf7dcc033b7564a734f53df4f28998c18556071286b2c",
-            "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.10.1/linux-arm64/ZCode-3.10.1-linux-arm64.deb",
-            "version": "3.10.1"
           }
         ],
         "maxBytes": 167772160,
@@ -5552,6 +5552,6 @@
       }
     }
   },
-  "revision": 20,
+  "revision": 21,
   "schemaVersion": 1
 }
