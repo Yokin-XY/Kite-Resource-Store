@@ -2,5 +2,5 @@
   "schemaVersion": 1,
   "keyId": "kite-store-2026-02",
   "algorithm": "SHA256withECDSA",
-  "signature": "MEQCIDoA0yQfmYXcpVOkjbg9UoiXxJf2iRORH0vVp850Nlg4AiABkIwXzAX7MRF1HszW/TjcZf1XAK9hgyQ3MmMAx4aURQ=="
+  "signature": "MEUCIQD7brJ3I+u+sizM2CA2HZ5SqTlFstb7QzKMoHpsmFuzMwIgcIn4Q58WUqg+eKjlIZJh/y8cUsSJqnivSEGpcAgO2/M="
 }

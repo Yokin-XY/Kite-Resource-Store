@@ -301,7 +301,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
-        "latestVersion": "2.1.275",
+        "latestVersion": "2.1.277",
         "package": "@anthropic-ai/claude-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
@@ -693,7 +693,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @openai/codex@latest",
-        "latestVersion": "0.155.0",
+        "latestVersion": "0.155.1",
         "package": "@openai/codex",
         "repository": "https://github.com/openai/codex",
         "type": "official_command",
@@ -3020,7 +3020,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @moonshot-ai/kimi-code@latest",
-        "latestVersion": "2.0.0",
+        "latestVersion": "2.0.1",
         "package": "@moonshot-ai/kimi-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @moonshot-ai/kimi-code"
@@ -3406,6 +3406,9 @@
             "mode": "managed",
             "protocol": "acp",
             "providerId": "openclaw",
+            "requirements": [
+              "full_linux"
+            ],
             "runtimeDependencies": [
               {
                 "argv": [
@@ -3753,17 +3756,20 @@
             "adapter": "pi-coding-agent",
             "required": false
           },
-          "description": "Pi 原生 RPC 会话",
+          "description": "Pi 官方 SDK 的 ACP 会话桥（Kite 随 APK 分发）",
           "id": "pi",
           "launch": {
             "argv": [
-              "pi",
-              "--mode",
-              "rpc"
+              "node",
+              "/workspace/.kf/software/kite.pi.coding.agent/npm-global/lib/node_modules/pi-acp-bridge.mjs"
             ],
+            "bridgeAsset": "resources/kite.pi.coding.agent/pi-acp-bridge.mjs",
             "mode": "managed",
-            "protocol": "pi-rpc",
+            "protocol": "acp",
             "providerId": "pi",
+            "requirements": [
+              "full_linux"
+            ],
             "title": "Pi Coding Agent",
             "transport": "stdio"
           },
@@ -4202,7 +4208,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qoder-ai/qodercli@latest",
-        "latestVersion": "1.1.55",
+        "latestVersion": "1.1.56",
         "package": "@qoder-ai/qodercli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qoder-ai/qodercli"
@@ -4538,7 +4544,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "1.38.9",
+        "latestVersion": "1.38.10",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5552,6 +5558,6 @@
       }
     }
   },
-  "revision": 22,
+  "revision": 23,
   "schemaVersion": 1
 }
