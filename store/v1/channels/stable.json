@@ -137,6 +137,15 @@
                   "auth",
                   "login"
                 ],
+                "cleanHome": true,
+                "credentialEnvDenylist": [
+                  "ANTHROPIC_AUTH_TOKEN",
+                  "ANTHROPIC_API_KEY",
+                  "ANTHROPIC_BASE_URL",
+                  "ANTHROPIC_CUSTOM_HEADERS",
+                  "ANTHROPIC_MODEL",
+                  "ANTHROPIC_DEFAULT_*_MODEL"
+                ],
                 "timeoutMs": 300000
               },
               "logout": {
@@ -144,6 +153,15 @@
                   "claude",
                   "auth",
                   "logout"
+                ],
+                "cleanHome": true,
+                "credentialEnvDenylist": [
+                  "ANTHROPIC_AUTH_TOKEN",
+                  "ANTHROPIC_API_KEY",
+                  "ANTHROPIC_BASE_URL",
+                  "ANTHROPIC_CUSTOM_HEADERS",
+                  "ANTHROPIC_MODEL",
+                  "ANTHROPIC_DEFAULT_*_MODEL"
                 ],
                 "timeoutMs": 30000
               },
@@ -158,6 +176,15 @@
                   "claude",
                   "auth",
                   "status"
+                ],
+                "cleanHome": true,
+                "credentialEnvDenylist": [
+                  "ANTHROPIC_AUTH_TOKEN",
+                  "ANTHROPIC_API_KEY",
+                  "ANTHROPIC_BASE_URL",
+                  "ANTHROPIC_CUSTOM_HEADERS",
+                  "ANTHROPIC_MODEL",
+                  "ANTHROPIC_DEFAULT_*_MODEL"
                 ],
                 "loggedInPatterns": [
                   "\"loggedIn\":true"
@@ -301,7 +328,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
-        "latestVersion": "2.1.280",
+        "latestVersion": "2.1.281",
         "package": "@anthropic-ai/claude-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
@@ -487,7 +514,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @tencent-ai/codebuddy-code@latest",
-        "latestVersion": "2.156.0",
+        "latestVersion": "2.157.0",
         "package": "@tencent-ai/codebuddy-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @tencent-ai/codebuddy-code"
@@ -693,7 +720,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @openai/codex@latest",
-        "latestVersion": "0.156.0",
+        "latestVersion": "0.156.1",
         "package": "@openai/codex",
         "repository": "https://github.com/openai/codex",
         "type": "official_command",
@@ -1454,7 +1481,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @deepseek-ai/dsh@latest && npm install -g @openma/deepseek-harness-acp@latest",
-        "latestVersion": "0.1.5-rc.2",
+        "latestVersion": "0.1.5-rc.3",
         "package": "@deepseek-ai/dsh",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @deepseek-ai/dsh && npm uninstall -g @openma/deepseek-harness-acp"
@@ -2720,12 +2747,25 @@
           "id": "hermes",
           "launch": {
             "argv": [
-              "hermes",
-              "acp"
+              "python3.12",
+              "/workspace/.kf/software/kite.hermes.core/hermes-agent/venv/bin/hermes-acp"
             ],
+            "environment": {
+              "HERMES_DISABLE_LAZY_INSTALLS": "1",
+              "HERMES_HOME": "/workspace/.kf/software/kite.hermes.core/home",
+              "HOME": "/workspace/.kf/software/kite.hermes.core/user-home",
+              "PYTHONPATH": "/workspace/.kf/software/kite.hermes.core/hermes-agent:/workspace/.kf/software/kite.hermes.core/hermes-agent/venv/lib/python3.12/site-packages"
+            },
             "mode": "managed",
             "protocol": "acp",
             "providerId": "hermes",
+            "runtimeGuaranteeEvidence": {
+              "pythonAbi": "cpython-312-aarch64-linux-gnu"
+            },
+            "runtimeGuarantees": [
+              "no_child_process",
+              "verified_native_imports"
+            ],
             "title": "Hermes",
             "transport": "stdio"
           },
@@ -3020,7 +3060,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @moonshot-ai/kimi-code@latest",
-        "latestVersion": "2.0.2",
+        "latestVersion": "2.1.0",
         "package": "@moonshot-ai/kimi-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @moonshot-ai/kimi-code"
@@ -3370,6 +3410,10 @@
                 "agentId": "openclaw",
                 "type": "agent",
                 "workdir": "/workspace"
+              },
+              {
+                "type": "open_web",
+                "url": "http://127.0.0.1:18789"
               }
             ]
           },
@@ -3401,14 +3445,14 @@
               "acp"
             ],
             "environmentFiles": {
-              "OPENCLAW_GATEWAY_TOKEN": "/workspace/.kf/secrets/kite.openclaw-gateway-token"
+              "OPENCLAW_GATEWAY_TOKEN": {
+                "autoGenerate": "random_token",
+                "path": "/workspace/.kf/secrets/kite.openclaw-gateway-token"
+              }
             },
             "mode": "managed",
             "protocol": "acp",
             "providerId": "openclaw",
-            "requirements": [
-              "full_linux"
-            ],
             "runtimeDependencies": [
               {
                 "argv": [
@@ -3423,23 +3467,46 @@
                   "token",
                   "--allow-unconfigured"
                 ],
+                "binaryPatches": [
+                  {
+                    "expectedCount": 1,
+                    "path": "/workspace/.kf/software/kite.openclaw/npm-global/lib/node_modules/openclaw/node_modules/@openclaw/fs-safe-linux-arm64-gnu/fs-safe-native.node",
+                    "pattern": "03038052????????????????e80300f9a8368052010000d4",
+                    "replacement": "83348052????????????????e20308aa080780d2010000d4"
+                  },
+                  {
+                    "expectedCount": 1,
+                    "path": "/workspace/.kf/software/kite.openclaw/npm-global/lib/node_modules/openclaw/node_modules/@openclaw/fs-safe-linux-arm64-gnu/fs-safe-native.node",
+                    "pattern": "03038052????????a8831ef8a8368052010000d4",
+                    "replacement": "83348052????????e20308aa080780d2010000d4"
+                  }
+                ],
                 "bindAddress": "127.0.0.1",
                 "bindPort": 18789,
                 "environment": {
                   "OPENCLAW_DISABLE_BONJOUR": "1"
                 },
                 "environmentFiles": {
-                  "OPENCLAW_GATEWAY_TOKEN": "/workspace/.kf/secrets/kite.openclaw-gateway-token"
+                  "OPENCLAW_GATEWAY_TOKEN": {
+                    "autoGenerate": "random_token",
+                    "path": "/workspace/.kf/secrets/kite.openclaw-gateway-token"
+                  }
                 },
                 "healthCheckStartupDelayMs": 0,
                 "healthHttpPath": "/readyz",
                 "id": "openclaw-gateway",
                 "restartPolicy": "on_failure",
                 "retentionClass": "resident",
+                "runtimeGuarantees": [
+                  "openat2_degrade"
+                ],
                 "startupTimeoutMs": 30000,
                 "title": "OpenClaw 网关",
                 "workdir": "/workspace"
               }
+            ],
+            "runtimeGuarantees": [
+              "openat2_degrade"
             ],
             "title": "OpenClaw",
             "transport": "stdio"
@@ -3513,6 +3580,10 @@
                 "agentId": "openclaw",
                 "type": "agent",
                 "workdir": "/workspace"
+              },
+              {
+                "type": "open_web",
+                "url": "http://127.0.0.1:18789"
               }
             ]
           }
@@ -3549,7 +3620,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g openclaw@latest",
-        "latestVersion": "2026.9.5",
+        "latestVersion": "2026.9.6",
         "package": "openclaw",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g openclaw"
@@ -3767,9 +3838,7 @@
             "mode": "managed",
             "protocol": "acp",
             "providerId": "pi",
-            "requirements": [
-              "full_linux"
-            ],
+            "requirements": [],
             "title": "Pi Coding Agent",
             "transport": "stdio"
           },
@@ -4208,7 +4277,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qoder-ai/qodercli@latest",
-        "latestVersion": "1.1.61",
+        "latestVersion": "1.1.62",
         "package": "@qoder-ai/qodercli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qoder-ai/qodercli"
@@ -4544,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "1.38.11",
+        "latestVersion": "1.38.12",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5558,6 +5627,6 @@
       }
     }
   },
-  "revision": 27,
+  "revision": 28,
   "schemaVersion": 1
 }
