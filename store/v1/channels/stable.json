@@ -328,7 +328,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
-        "latestVersion": "2.1.281",
+        "latestVersion": "2.1.282",
         "package": "@anthropic-ai/claude-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
@@ -514,7 +514,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @tencent-ai/codebuddy-code@latest",
-        "latestVersion": "2.157.0",
+        "latestVersion": "2.158.0",
         "package": "@tencent-ai/codebuddy-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @tencent-ai/codebuddy-code"
@@ -1933,7 +1933,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @google/gemini-cli@latest",
-        "latestVersion": "0.60.0",
+        "latestVersion": "0.61.0",
         "package": "@google/gemini-cli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @google/gemini-cli"
@@ -2498,6 +2498,11 @@
                 "id": "acquire-hermes-source",
                 "latestVersionWindow": [
                   {
+                    "commit": "f97608f178d1ffeca59860195ab7da295f7c8e5f",
+                    "ref": "v2026.9.24",
+                    "version": "v2026.9.24"
+                  },
+                  {
                     "commit": "d337b736aa1e8ebecfab043842d13e4a2d2f48a3",
                     "ref": "v2026.9.21",
                     "version": "v2026.9.21"
@@ -2506,11 +2511,6 @@
                     "commit": "345cd2b057a452236de401d3534b8502a7465e8d",
                     "ref": "v2026.9.14",
                     "version": "v2026.9.14"
-                  },
-                  {
-                    "commit": "939e45c91d751fadd94dcd1b873ac3cb44846213",
-                    "ref": "v2026.9.11",
-                    "version": "v2026.9.11"
                   }
                 ],
                 "repositories": [
@@ -3060,7 +3060,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @moonshot-ai/kimi-code@latest",
-        "latestVersion": "2.1.0",
+        "latestVersion": "2.1.1",
         "package": "@moonshot-ai/kimi-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @moonshot-ai/kimi-code"
@@ -4277,7 +4277,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qoder-ai/qodercli@latest",
-        "latestVersion": "1.1.62",
+        "latestVersion": "1.1.63",
         "package": "@qoder-ai/qodercli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qoder-ai/qodercli"
@@ -4451,7 +4451,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qwen-code/qwen-code@latest",
-        "latestVersion": "0.24.4",
+        "latestVersion": "0.24.5",
         "package": "@qwen-code/qwen-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qwen-code/qwen-code"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "1.38.12",
+        "latestVersion": "1.39.0",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 28,
+  "revision": 29,
   "schemaVersion": 1
 }
