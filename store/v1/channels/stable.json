@@ -720,7 +720,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @openai/codex@latest",
-        "latestVersion": "0.157.0",
+        "latestVersion": "0.157.1",
         "package": "@openai/codex",
         "repository": "https://github.com/openai/codex",
         "type": "official_command",
@@ -4451,7 +4451,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qwen-code/qwen-code@latest",
-        "latestVersion": "0.24.5",
+        "latestVersion": "0.24.6",
         "package": "@qwen-code/qwen-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qwen-code/qwen-code"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "1.39.0",
+        "latestVersion": "1.39.1",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 30,
+  "revision": 31,
   "schemaVersion": 1
 }
