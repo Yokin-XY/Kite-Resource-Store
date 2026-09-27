@@ -514,7 +514,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @tencent-ai/codebuddy-code@latest",
-        "latestVersion": "2.158.0",
+        "latestVersion": "2.159.0",
         "package": "@tencent-ai/codebuddy-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @tencent-ai/codebuddy-code"
@@ -1481,7 +1481,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @deepseek-ai/dsh@latest && npm install -g @openma/deepseek-harness-acp@latest",
-        "latestVersion": "0.1.5-rc.3",
+        "latestVersion": "0.1.7-rc.2",
         "package": "@deepseek-ai/dsh",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @deepseek-ai/dsh && npm uninstall -g @openma/deepseek-harness-acp"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "1.39.1",
+        "latestVersion": "1.39.2",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 31,
+  "revision": 32,
   "schemaVersion": 1
 }
