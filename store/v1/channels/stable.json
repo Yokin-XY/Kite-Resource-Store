@@ -328,7 +328,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
-        "latestVersion": "2.1.283",
+        "latestVersion": "2.1.284",
         "package": "@anthropic-ai/claude-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
@@ -720,7 +720,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @openai/codex@latest",
-        "latestVersion": "0.157.1",
+        "latestVersion": "0.158.0",
         "package": "@openai/codex",
         "repository": "https://github.com/openai/codex",
         "type": "official_command",
@@ -2232,7 +2232,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @github/copilot@latest",
-        "latestVersion": "1.0.88",
+        "latestVersion": "1.0.89",
         "package": "@github/copilot",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @github/copilot"
@@ -3788,7 +3788,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g opencode-ai@latest",
-        "latestVersion": "1.18.32",
+        "latestVersion": "1.18.33",
         "package": "opencode-ai",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g opencode-ai"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "1.39.2",
+        "latestVersion": "1.39.4",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 32,
+  "revision": 33,
   "schemaVersion": 1
 }
