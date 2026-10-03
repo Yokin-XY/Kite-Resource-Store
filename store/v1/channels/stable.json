@@ -328,7 +328,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
-        "latestVersion": "2.1.288",
+        "latestVersion": "2.1.289",
         "package": "@anthropic-ai/claude-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
@@ -3620,7 +3620,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g openclaw@latest",
-        "latestVersion": "2026.9.7",
+        "latestVersion": "2026.9.8",
         "package": "openclaw",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g openclaw"
@@ -3951,7 +3951,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @earendil-works/pi-coding-agent@latest",
-        "latestVersion": "1.0.0",
+        "latestVersion": "1.0.1",
         "package": "@earendil-works/pi-coding-agent",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @earendil-works/pi-coding-agent"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 37,
+  "revision": 38,
   "schemaVersion": 1
 }
