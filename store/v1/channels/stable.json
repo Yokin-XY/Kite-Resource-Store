@@ -514,7 +514,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @tencent-ai/codebuddy-code@latest",
-        "latestVersion": "2.161.1",
+        "latestVersion": "2.161.2",
         "package": "@tencent-ai/codebuddy-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @tencent-ai/codebuddy-code"
@@ -3951,7 +3951,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @earendil-works/pi-coding-agent@latest",
-        "latestVersion": "1.0.1",
+        "latestVersion": "1.0.2",
         "package": "@earendil-works/pi-coding-agent",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @earendil-works/pi-coding-agent"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 38,
+  "revision": 39,
   "schemaVersion": 1
 }
