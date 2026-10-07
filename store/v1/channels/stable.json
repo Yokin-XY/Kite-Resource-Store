@@ -328,7 +328,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
-        "latestVersion": "2.1.290",
+        "latestVersion": "2.1.292",
         "package": "@anthropic-ai/claude-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
@@ -1933,7 +1933,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @google/gemini-cli@latest",
-        "latestVersion": "0.62.0",
+        "latestVersion": "0.63.0",
         "package": "@google/gemini-cli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @google/gemini-cli"
@@ -3788,7 +3788,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g opencode-ai@latest",
-        "latestVersion": "1.18.34",
+        "latestVersion": "1.18.35",
         "package": "opencode-ai",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g opencode-ai"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "2.28.0",
+        "latestVersion": "2.29.0",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 40,
+  "revision": 41,
   "schemaVersion": 1
 }
