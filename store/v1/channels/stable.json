@@ -328,7 +328,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
-        "latestVersion": "2.1.292",
+        "latestVersion": "2.1.293",
         "package": "@anthropic-ai/claude-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
@@ -514,7 +514,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @tencent-ai/codebuddy-code@latest",
-        "latestVersion": "2.161.4",
+        "latestVersion": "2.162.0",
         "package": "@tencent-ai/codebuddy-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @tencent-ai/codebuddy-code"
@@ -720,7 +720,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @openai/codex@latest",
-        "latestVersion": "0.160.1",
+        "latestVersion": "0.161.0",
         "package": "@openai/codex",
         "repository": "https://github.com/openai/codex",
         "type": "official_command",
@@ -2232,7 +2232,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @github/copilot@latest",
-        "latestVersion": "1.0.92",
+        "latestVersion": "1.0.93",
         "package": "@github/copilot",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @github/copilot"
@@ -3951,7 +3951,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @earendil-works/pi-coding-agent@latest",
-        "latestVersion": "1.0.4",
+        "latestVersion": "1.1.0",
         "package": "@earendil-works/pi-coding-agent",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @earendil-works/pi-coding-agent"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "2.29.0",
+        "latestVersion": "2.30.0",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 41,
+  "revision": 42,
   "schemaVersion": 1
 }
