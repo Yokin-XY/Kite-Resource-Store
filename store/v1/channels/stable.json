@@ -3620,7 +3620,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g openclaw@latest",
-        "latestVersion": "2026.9.9",
+        "latestVersion": "2026.10.1",
         "package": "openclaw",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g openclaw"
@@ -4277,7 +4277,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qoder-ai/qodercli@latest",
-        "latestVersion": "1.1.67",
+        "latestVersion": "1.1.68",
         "package": "@qoder-ai/qodercli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qoder-ai/qodercli"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "2.33.0",
+        "latestVersion": "2.34.0",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 44,
+  "revision": 45,
   "schemaVersion": 1
 }
