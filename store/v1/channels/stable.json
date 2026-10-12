@@ -3788,7 +3788,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g opencode-ai@latest",
-        "latestVersion": "1.18.35",
+        "latestVersion": "1.19.0",
         "package": "opencode-ai",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g opencode-ai"
@@ -4451,7 +4451,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qwen-code/qwen-code@latest",
-        "latestVersion": "0.25.0",
+        "latestVersion": "0.25.1",
         "package": "@qwen-code/qwen-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qwen-code/qwen-code"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "2.34.0",
+        "latestVersion": "2.36.0",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 45,
+  "revision": 46,
   "schemaVersion": 1
 }
