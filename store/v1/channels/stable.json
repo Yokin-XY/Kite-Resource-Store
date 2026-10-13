@@ -2232,7 +2232,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @github/copilot@latest",
-        "latestVersion": "1.0.95",
+        "latestVersion": "1.0.96",
         "package": "@github/copilot",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @github/copilot"
@@ -3620,7 +3620,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g openclaw@latest",
-        "latestVersion": "2026.10.1",
+        "latestVersion": "2026.10.2",
         "package": "openclaw",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g openclaw"
@@ -3951,7 +3951,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @earendil-works/pi-coding-agent@latest",
-        "latestVersion": "1.1.0",
+        "latestVersion": "1.2.0",
         "package": "@earendil-works/pi-coding-agent",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @earendil-works/pi-coding-agent"
@@ -4277,7 +4277,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qoder-ai/qodercli@latest",
-        "latestVersion": "1.1.68",
+        "latestVersion": "1.1.69",
         "package": "@qoder-ai/qodercli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qoder-ai/qodercli"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "2.36.0",
+        "latestVersion": "2.37.0",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5601,6 +5601,12 @@
         "latestUrl": "https://zcode.z.ai/en",
         "latestVersionWindow": [
           {
+            "artifact": "ZCode-3.15.1-linux-arm64.deb",
+            "sha256": "7a1d64e94d54ca2ab484fb6867b69fcf65fd19934fa0d4ab2a31de07ffd800c3",
+            "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.15.1/linux-arm64/ZCode-3.15.1-linux-arm64.deb",
+            "version": "3.15.1"
+          },
+          {
             "artifact": "ZCode-3.14.5-linux-arm64.deb",
             "sha256": "24c5755be446d555e6c16e1dbd8d09cb684876480eb5764d6f6ef453db3f7290",
             "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.14.5/linux-arm64/ZCode-3.14.5-linux-arm64.deb",
@@ -5611,12 +5617,6 @@
             "sha256": "6874d0b12f9522840746d81f39a001648be68eed3aa80c1348a4e360c44ef718",
             "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.14.4/linux-arm64/ZCode-3.14.4-linux-arm64.deb",
             "version": "3.14.4"
-          },
-          {
-            "artifact": "ZCode-3.14.3-linux-arm64.deb",
-            "sha256": "18263ced23563fd4c9afcaa6971da9541126d53c81f91f0bb28c938bd9efd477",
-            "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.14.3/linux-arm64/ZCode-3.14.3-linux-arm64.deb",
-            "version": "3.14.3"
           }
         ],
         "maxBytes": 167772160,
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 46,
+  "revision": 47,
   "schemaVersion": 1
 }
