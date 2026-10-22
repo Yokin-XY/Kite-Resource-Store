@@ -328,7 +328,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
-        "latestVersion": "2.1.305",
+        "latestVersion": "2.1.307",
         "package": "@anthropic-ai/claude-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
@@ -514,7 +514,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @tencent-ai/codebuddy-code@latest",
-        "latestVersion": "2.171.0",
+        "latestVersion": "2.172.1",
         "package": "@tencent-ai/codebuddy-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @tencent-ai/codebuddy-code"
@@ -2232,7 +2232,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @github/copilot@latest",
-        "latestVersion": "1.0.101",
+        "latestVersion": "1.0.102",
         "package": "@github/copilot",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @github/copilot"
@@ -3060,7 +3060,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @moonshot-ai/kimi-code@latest",
-        "latestVersion": "2.2.0",
+        "latestVersion": "2.3.0",
         "package": "@moonshot-ai/kimi-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @moonshot-ai/kimi-code"
@@ -3951,7 +3951,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @earendil-works/pi-coding-agent@latest",
-        "latestVersion": "1.3.0",
+        "latestVersion": "1.4.0",
         "package": "@earendil-works/pi-coding-agent",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @earendil-works/pi-coding-agent"
@@ -4277,7 +4277,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qoder-ai/qodercli@latest",
-        "latestVersion": "1.1.75",
+        "latestVersion": "1.1.76",
         "package": "@qoder-ai/qodercli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qoder-ai/qodercli"
@@ -4451,7 +4451,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qwen-code/qwen-code@latest",
-        "latestVersion": "0.25.3",
+        "latestVersion": "0.26.0",
         "package": "@qwen-code/qwen-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qwen-code/qwen-code"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "2.46.0",
+        "latestVersion": "2.47.1",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 55,
+  "revision": 56,
   "schemaVersion": 1
 }
