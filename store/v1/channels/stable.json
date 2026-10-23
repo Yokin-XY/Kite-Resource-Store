@@ -328,7 +328,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
-        "latestVersion": "2.1.309",
+        "latestVersion": "2.1.310",
         "package": "@anthropic-ai/claude-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
@@ -514,7 +514,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @tencent-ai/codebuddy-code@latest",
-        "latestVersion": "2.173.0",
+        "latestVersion": "2.174.0",
         "package": "@tencent-ai/codebuddy-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @tencent-ai/codebuddy-code"
@@ -720,7 +720,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @openai/codex@latest",
-        "latestVersion": "0.163.0",
+        "latestVersion": "0.164.0",
         "package": "@openai/codex",
         "repository": "https://github.com/openai/codex",
         "type": "official_command",
@@ -3060,7 +3060,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @moonshot-ai/kimi-code@latest",
-        "latestVersion": "2.3.0",
+        "latestVersion": "2.3.1",
         "package": "@moonshot-ai/kimi-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @moonshot-ai/kimi-code"
@@ -4277,7 +4277,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qoder-ai/qodercli@latest",
-        "latestVersion": "1.1.77",
+        "latestVersion": "1.1.78",
         "package": "@qoder-ai/qodercli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qoder-ai/qodercli"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "2.49.0",
+        "latestVersion": "2.50.0",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5601,6 +5601,12 @@
         "latestUrl": "https://zcode.z.ai/en",
         "latestVersionWindow": [
           {
+            "artifact": "ZCode-3.16.3-linux-arm64.deb",
+            "sha256": "338e91013125ee49f665f1dc3a07af09518b05f53f9a5a359de4572009c660e2",
+            "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/linux-arm64/ZCode-3.16.3-linux-arm64.deb",
+            "version": "3.16.3"
+          },
+          {
             "artifact": "ZCode-3.16.2-linux-arm64.deb",
             "sha256": "35bc72a8b9316703eca135f336e486a39740c9a3344423ead2e2038502c17cf0",
             "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.2/linux-arm64/ZCode-3.16.2-linux-arm64.deb",
@@ -5611,12 +5617,6 @@
             "sha256": "5b0d39e8ed352f8dc96fd9d406c0e64fe622e570673e78db2f29a81122c69d15",
             "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.15.3/linux-arm64/ZCode-3.15.3-linux-arm64.deb",
             "version": "3.15.3"
-          },
-          {
-            "artifact": "ZCode-3.15.1-linux-arm64.deb",
-            "sha256": "7a1d64e94d54ca2ab484fb6867b69fcf65fd19934fa0d4ab2a31de07ffd800c3",
-            "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.15.1/linux-arm64/ZCode-3.15.1-linux-arm64.deb",
-            "version": "3.15.1"
           }
         ],
         "maxBytes": 167772160,
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 57,
+  "revision": 58,
   "schemaVersion": 1
 }
