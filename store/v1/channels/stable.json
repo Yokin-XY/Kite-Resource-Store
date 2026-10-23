@@ -328,7 +328,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @anthropic-ai/claude-code@latest && npm install -g @agentclientprotocol/claude-agent-acp@latest",
-        "latestVersion": "2.1.307",
+        "latestVersion": "2.1.309",
         "package": "@anthropic-ai/claude-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @anthropic-ai/claude-code && npm uninstall -g @agentclientprotocol/claude-agent-acp"
@@ -514,7 +514,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @tencent-ai/codebuddy-code@latest",
-        "latestVersion": "2.172.1",
+        "latestVersion": "2.173.0",
         "package": "@tencent-ai/codebuddy-code",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @tencent-ai/codebuddy-code"
@@ -2232,7 +2232,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @github/copilot@latest",
-        "latestVersion": "1.0.102",
+        "latestVersion": "1.0.103",
         "package": "@github/copilot",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @github/copilot"
@@ -3620,7 +3620,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g openclaw@latest",
-        "latestVersion": "2026.10.5",
+        "latestVersion": "2026.10.6",
         "package": "openclaw",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g openclaw"
@@ -3788,7 +3788,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g opencode-ai@latest",
-        "latestVersion": "1.19.3",
+        "latestVersion": "1.19.4",
         "package": "opencode-ai",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g opencode-ai"
@@ -4277,7 +4277,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g @qoder-ai/qodercli@latest",
-        "latestVersion": "1.1.76",
+        "latestVersion": "1.1.77",
         "package": "@qoder-ai/qodercli",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g @qoder-ai/qodercli"
@@ -4613,7 +4613,7 @@
       "schemaVersion": 1,
       "source": {
         "command": "npm install -g reasonix@latest",
-        "latestVersion": "2.47.1",
+        "latestVersion": "2.49.0",
         "package": "reasonix",
         "type": "official_command",
         "uninstallCommand": "npm uninstall -g reasonix"
@@ -5627,6 +5627,6 @@
       }
     }
   },
-  "revision": 56,
+  "revision": 57,
   "schemaVersion": 1
 }
